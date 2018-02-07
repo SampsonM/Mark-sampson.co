@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|PT+Sans|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SampsonM</title>
+</head>
+<body>
+    <div id="backg-fade"></div>
+    <nav id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html"><i class="fa fa-wpexplorer" style="font-size: 1.9em"></i></a>
+        <a href="contact.html"><i class="fa fa-envelope-o" style="font-size: 1.87em"></i></a>
+        <a href="https://www.linkedin.com/in/mark-sampson-33995bb9/" target="_blank"><i class="fa fa-linkedin linked" style="font-size: 1.9em"></i></a>
+        <a href="https://github.com/SampsonM" target="_blank"><i class="fa fa-github" style="font-size: 2.3em"></i></a>
+        <a href="javascript:void(0)" onclick="openTimer(), closeNav()"><i class="fa fa-clock-o timer" style="font-size: 2em"></i> </a>
+    </nav>
+
+    <i onclick="openNav()" class="fa fa-bars" id="menu" style="font-size: 1.9em"></i>
+    
+    <div id="timer">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeTimer()">&times;</a>
+        <div class="timer-text">
+            <div class="topline">
+                <p>Its been</p>
+                <p id="days">0</p> 
+                <p> days, </p>
+                <p id="hours">0</p>
+                <p> hours, </p>
+                <p id="minutes">0</p>
+                <p> minutes, </p>
+            </div>
+            <div class="bottomline">
+                <p id="secs">0</p> 
+                <p> seconds since starting to learn to code.</p>
+            </div>
+        </div>
+    </div>
+<div class="main">
+    <div class="img-text">    
+        <img src="images/me.png" alt="SampsonM">
+        <h2>Mark Sampson - Software Developer</h2>
+    </div>
+
+    <div class="main-text">
+        
+        <p>Currently in training at Northcoders, Manchester</p>
+        <img src="images/logo.png">
+    </div>
+</div>
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@media only screen and (min-width: 1200px) {
+    form {
+        position: relative;
+        top: 160px;
+    }
+    .words {
+        position: relative;
+        top: 160px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url("/Users/marksampson/Documents/precourse/PRE-section-3/finalChallenge/images/wood2.jpeg") #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    transition: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #82a0d1a4;
+}
+
+nav a {
+    padding: 10px 5px 10px 10px;
+    text-decoration: none;
+    color: #362e33;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #e0cfa8e8; 
+}
+
+a .linked {
+    position: relative;
+    left: 2px;
+}
+
+nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1.3em;
+    margin-left: 50px;
+}
+
+#menu {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    text-shadow: 0px 0px 6px #000;
+    color: #82a0d1b0;
+    transition: 0.2s;
+}
+
+#menu:hover {
+    color: #e0cfa8e8;
+}
+
+#main {
+    transition: 0.5s;
+    padding: 40px;
+    text-align: center;
+}
+
+.words {
+    position: relative;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #362e33;
+    border-radius: 10px;
+    background-color: #95b9f3d5;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.row {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+form {
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: left;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 600px;
+    border: 2px solid #362e33;
+    border-radius: 10px;
+    background-color: #95b9f3d5;
+    box-shadow: 0 0 10px #00000071;
+}
+
+input[type=text] {
+    border: 1px solid #362e33;
+    border-radius: 2px;
+    width: 100%;
+}
+
+#message {
+    height: 100px;
+}
+
+#button {
+    border: 1px solid #362e33;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+#button:hover {
+    background-color: #e0cfa8e8;
+}
