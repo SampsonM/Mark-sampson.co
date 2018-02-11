@@ -9,10 +9,6 @@
     }
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -89,13 +85,13 @@ nav .closebtn {
 
 .words {
     position: relative;
-    max-width: 200px;
+    max-width: 250px;
     margin: 0 auto;
-    padding: 10px;
-    border: 2px solid #362e33;
-    border-radius: 10px;
-    background-color: #95b9f3d5;
+    padding: 20px;
+    background-color: #86a6dae5;
+    box-shadow: 0 0 10px #000;    
     font-family: 'Roboto Mono', sans-serif;
+    line-height: 25px;
 }
 
 .row {
@@ -110,10 +106,12 @@ form {
     margin: 0 auto;
     padding: 40px;
     max-width: 600px;
-    border: 2px solid #362e33;
-    border-radius: 10px;
-    background-color: #95b9f3d5;
-    box-shadow: 0 0 10px #00000071;
+    background-color: #86a6dae5;
+    box-shadow: 0 0 10px #000;
+}
+
+form p {
+    margin: 8px 0 4px 0;
 }
 
 input[type=text] {
@@ -123,13 +121,17 @@ input[type=text] {
 }
 
 #message {
+    border: 1px solid #362e33;  
+    border-radius: 2px;      
     height: 100px;
+    min-width: 100%;
 }
 
 #button {
     border: 1px solid #362e33;
     border-radius: 2px;
-    margin-right: 10px;
+    margin: 10px 5px 0 0;
+    transition-duration: 0.2s;
 }
 
 #button:hover {

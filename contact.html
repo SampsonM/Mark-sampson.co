@@ -22,15 +22,15 @@
     <i onclick="openNav()" class="fa fa-bars" id="menu" style="font-size: 1.9em"></i>
 
 <div id="main">
-    <p class="words">Leave me a message!</p>
+    <p class="words">Contact me if you'd like to work together!</p>
     <div class="row">
         <form>
-            Name:
-            <input onclick="emptyName()" id="name" type="text" name="name" value="Enter name here" required> </br></br>
-            Email:
-            <input onclick="emptyEmail()" id="email" type="text" name="email" value="Enter valid email" required> </br></br>
-            Message:
-            <input id="message" type="text" name="meassage" required> </br></br>
+            <p>Name:</p>
+            <input onclick="emptyName()" id="name" type="text" name="name" value="Enter name here" required>
+            <p>Email:</p>
+            <input onclick="emptyEmail()" id="email" type="text" name="email" value="Enter valid email" required>
+            <p>Message:</p>
+            <textarea id="message" type="text" name="meassage" required></textarea>
             <input type="submit" id="button">
             <input type="reset" id="button">
         </form>

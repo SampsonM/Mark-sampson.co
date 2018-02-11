@@ -134,6 +134,7 @@ nav .closebtn {
     background-color: #86a6dae5;
     font-family: 'Roboto Mono', sans-serif;
     font-size: 0.9em;
+    box-shadow: 0 0 10px #000;
 }
 
 .logo {
