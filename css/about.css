@@ -40,6 +40,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: #252525;
 }
 
 nav {
@@ -66,7 +67,7 @@ nav a {
 }
 
 a:hover {
-    color: #e0cfa8e8;
+    color: #ecdaaf;
 }
 
 a .linked {
@@ -92,7 +93,7 @@ nav .closebtn {
 }
 
 #menu:hover {
-    color: #e0cfa8e8;
+    color: #ecdaaf;
 }
 
 #main {

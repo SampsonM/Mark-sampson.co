@@ -20,6 +20,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Robot Mono', sans-serif;
+    color: #252525;    
 }
 
 #backg-fade {
@@ -58,7 +59,7 @@ nav a {
 }
 
 a:hover {
-    color: #e0cfa8e8;
+    color: #ecdaaf;
 }
 
 a .linked {
@@ -87,7 +88,7 @@ a .linked {
 }
 
 #menu:hover {
-    color: #e0cfa8e8;
+    color: #ecdaaf;
 }
 
 

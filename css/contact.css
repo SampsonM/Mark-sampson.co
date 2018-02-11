@@ -21,6 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: #252525;
 }
 
 nav {
@@ -47,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e0cfa8e8; 
+    color: #ecdaaf; 
 }
 
 a .linked {
@@ -73,24 +74,13 @@ nav .closebtn {
 }
 
 #menu:hover {
-    color: #e0cfa8e8;
+    color: #ecdaaf;
 }
 
 #main {
     transition: 0.5s;
     padding: 40px;
     text-align: center;
-}
-
-.words {
-    position: relative;
-    max-width: 250px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #86a6dae5;
-    box-shadow: 0 0 10px #000;    
-    font-family: 'Roboto Mono', sans-serif;
-    line-height: 25px;
 }
 
 .row {
@@ -107,6 +97,11 @@ form {
     max-width: 600px;
     background-color: #86a6dae5;
     box-shadow: 0 0 10px #000;
+}
+
+form .text {
+    text-align: center;
+    margin: 0px auto 20px auto;
 }
 
 form p {
@@ -134,5 +129,5 @@ input[type=text] {
 }
 
 #button:hover {
-    background-color: #e0cfa8e8;
+    background-color: #fceece;
 }
