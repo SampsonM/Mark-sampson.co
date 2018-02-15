@@ -12,6 +12,7 @@ function closeNav() {
 
 function openTimer() {
     document.getElementById("timer").style.visibility = "visible";
+    document.getElementById("menu").style.visibility = "hidden";    
 
     setInterval(function(){ myTimer()}, 100);
  
@@ -21,6 +22,8 @@ function myTimer() {
     var count = today - start;
 
     let days = Math.floor(count/(60*60*1000*24)*1);
+    let years = Math.floor(days/365);
+    if (years > 1) days = days - (years * 365);
     let hours = Math.floor((count%(60*60*1000*24))/(60*60*1000)*1);
     let minutes = Math.floor(((count%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
     let secs = Math.floor((((count%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
@@ -35,5 +38,6 @@ function myTimer() {
         
 function closeTimer() {
     document.getElementById("timer").style.visibility = "hidden";
+    document.getElementById("menu").style.visibility = "visible";
     document.getElementById("backg-fade").style.width = "0";
 }
