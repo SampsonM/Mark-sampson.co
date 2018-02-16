@@ -33,8 +33,9 @@ nav a {
     transition: 0.2s;
 }
 
-a:hover {
-    color: #ecdaaf;
+.fa:hover {
+    transform: scale(1.11,1.1);
+    color: #ecdaaf;    
 }
 
 a .linked {
@@ -51,16 +52,13 @@ nav .closebtn {
 }
 
 #menu {
+    display: inline;
     position: relative;
     left: 20px;
     top: 20px;
-    text-shadow: 0px 0px 6px #000;
-    color: #82a0d1b0;
-    transition: 0.2s;
-}
-
-#menu:hover {
-    color: #ecdaaf;
+    text-shadow: 0px 0px 4px #252525;
+    color: #86a6dae5;
+    transition-duration: 0.3s;
 }
 
 .grid {
@@ -71,10 +69,18 @@ nav .closebtn {
     grid-template: auto auto auto 1fr / repeat(12, 1fr);
 }
 
+.banner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1 / -1;
+    background-color: #ecdaaf6f;
+    border-bottom: 2px solid #252525b6;
+}
+
 .face {
     grid-column: 2 / 12;
     grid-row: 1 / 2;
-    margin: auto;
+    margin: 30px auto;
     padding: 0px;
     border-radius: 50%;
     box-shadow: 1px 1px 20px #000000;
@@ -87,6 +93,7 @@ nav .closebtn {
     margin: 20px auto;
     padding: 20px;
     background-color: #86a6dae5;
+    border-radius: .2rem;
     box-shadow: 0 0 10px #000;
 }
 
@@ -113,6 +120,7 @@ nav .closebtn {
     padding: 15px;
     max-width: 350px;
     background-color: #86a6dae5;
+    border-radius: .2rem;
 }
 
 .scoreTrack {
@@ -122,6 +130,7 @@ nav .closebtn {
     width: 100%;
     min-height: 300px;
     max-height: 300px;
+    border-radius: .2rem;
     box-shadow: inset 0 0 0 1000px #99b5e2cf;
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
@@ -147,6 +156,7 @@ nav .closebtn {
     width: 100%;    
     min-height: 300px;   
     max-height: 300px;    
+    border-radius: .2rem;
     box-shadow: inset 0 0 0 1000px #99b5e2cf;
     transition-duration: 0.1s;
     transition-timing-function: ease-out;
@@ -171,7 +181,8 @@ nav .closebtn {
     grid-row: 4 / 5;
     width: 100%;    
     min-height: 300px; 
-    max-height: 300px;       
+    max-height: 300px;  
+    border-radius: .2rem;     
     box-shadow: inset 0 0 0 1000px #99b5e2cf;  
     transition-duration: 0.1s;
     transition-timing-function: ease-out;  

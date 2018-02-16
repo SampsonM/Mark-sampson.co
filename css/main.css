@@ -60,6 +60,7 @@ nav a {
 
 a:hover {
     color: #ecdaaf;
+    transform: scale(1.09,1.09);
 }
 
 a .linked {
@@ -82,8 +83,9 @@ a .linked {
     position: relative;
     left: 20px;
     top: 20px;
+    font-size: 1.9em;
     text-shadow: 0px 0px 6px #000;
-    transition: 0.1s;
+    transition: 0.05s;
     color: #82a0d1b0;
 }
 
