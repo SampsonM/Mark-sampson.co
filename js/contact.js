@@ -32,18 +32,25 @@ const canvas = document.querySelector('#myCanvas');
 const ctx = canvas.getContext('2d');
 const etchSketch = document.querySelector('#etch-sketch');
 const clear = document.querySelector('#clear');
+const etchImg = document.querySelector('#etchImg');
 let x = 0;
 let y = 0;
 window.addEventListener("keydown", moveSomething, false);
 window.addEventListener("resize", init, false);
+// window.addEventListener("onLoad", printImg, false);
 clear.addEventListener("click", reset, false);
 
 init(); //initialise etch sketch area
 
 function init() {
     fitToContainer(canvas);    
-    reset();   
+    reset();
+    // printImg();
 };
+
+// function printImg() {
+//     ctx.drawImage(etchImg, -100, 0);
+// }
 
 //reset canvas
 function reset() {
@@ -86,3 +93,4 @@ function moveSomething(e) {
             break;  
     }   
 };
+

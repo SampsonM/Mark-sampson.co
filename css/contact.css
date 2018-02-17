@@ -116,17 +116,27 @@ input[type=text] {
 }
 
 #etch-sketch {
+    display: flex;
     position: absolute;
     top: 25%;
     left: 25%;
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 40vw;
+    max-width: ;
 }
 
 #myCanvas {
+    position: absolute;
     background-color: #d4cdbcf8;
 }
 
 #clear {
+}
 
+#etchImg {
+    position: absolute;
+    transform: scale(1.02,1.02);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
