@@ -37,7 +37,6 @@ let x = 0;
 let y = 0;
 window.addEventListener("keydown", moveSomething, false);
 window.addEventListener("resize", init, false);
-// window.addEventListener("onLoad", printImg, false);
 clear.addEventListener("click", reset, false);
 
 init(); //initialise etch sketch area
@@ -45,12 +44,7 @@ init(); //initialise etch sketch area
 function init() {
     fitToContainer(canvas);    
     reset();
-    // printImg();
 };
-
-// function printImg() {
-//     ctx.drawImage(etchImg, -100, 0);
-// }
 
 //reset canvas
 function reset() {
