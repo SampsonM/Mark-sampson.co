@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SampsonM - Contact</title>
 </head>
-<body>
+<body onload="typeWriter()">
     <nav id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html"><i class="fa fa-home" style="font-size: 1.9em"></i></a>
@@ -21,21 +21,25 @@
 
     <i onclick="openNav()" class="fa fa-bars" id="menu" style="font-size: 1.9em"></i>
 
-<div id="main">
-    <div class="row">
+
         <form>
-            <p class="text">Let's build something!</p>
+            <p id="text"></p>
             <p>Name:</p>
             <input onclick="emptyName()" id="name" type="text" name="name" required>
             <p>Email:</p>
             <input onclick="emptyEmail()" id="email" type="text" name="email" required>
             <p>Message:</p>
             <textarea id="message" type="text" name="meassage" required></textarea>
-            <input type="submit" id="button">
-            <input type="reset" id="button">
+            <input type="submit" class="button">
+            <input type="reset" class="button">
+            <button class="button" id="build">Build!</button>
         </form>
-    </div>
-</div>
+
+        <div id="etch-sketch">
+            <canvas id="myCanvas" height="600px" width="800px"></canvas>            
+        </div>
+
+
 <script src="js/contact.js"></script>
 </body>
 </html>
