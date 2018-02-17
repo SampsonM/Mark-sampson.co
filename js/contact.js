@@ -34,14 +34,29 @@ const etchSketch = document.querySelector('#etch-sketch');
 const clear = document.querySelector('#clear');
 let x = 0;
 let y = 0;
-clear.addEventListener("click", reset, false);
 window.addEventListener("keydown", moveSomething, false);
-init();
+window.addEventListener("resize", init, false);
+clear.addEventListener("click", reset, false);
+
+init(); //initialise etch sketch area
 
 function init() {
+    fitToContainer(canvas);    
+    reset();   
+};
+
+//reset canvas
+function reset() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     x = etchSketch.offsetWidth / 2;
     y = (etchSketch.offsetHeight / 4) * 3;
-}
+};
+
+//set canvas to div automat
+function fitToContainer(canvas){
+    canvas.width  = etchSketch.offsetWidth;
+    canvas.height = etchSketch.offsetHeight;
+};
 
 //moves ctx on key press
 function moveCtx(x, y) {
@@ -55,6 +70,7 @@ function moveSomething(e) {
         case 37: //left
             x -= 4;
             moveCtx(x, y);
+            console.log(x, y);
             break;
         case 38: //up
             y -= 4;
@@ -70,17 +86,3 @@ function moveSomething(e) {
             break;  
     }   
 };
-
-fitToContainer(canvas);
-
-function fitToContainer(canvas){
-  // ...then set the internal size to match
-  canvas.width  = etchSketch.offsetWidth;
-  canvas.height = etchSketch.offsetHeight;
-}
-
-function reset() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    init();
-};
-
