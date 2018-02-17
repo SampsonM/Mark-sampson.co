@@ -115,9 +115,18 @@ input[type=text] {
     margin: 10px 0 0 0;
 }
 
+#etch-sketch {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+
 #myCanvas {
     background-color: #d4cdbcf8;
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+
+#clear {
+
 }
