@@ -118,11 +118,12 @@ input[type=text] {
 #etch-sketch {
     display: flex;
     position: absolute;
-    top: 25%;
+    top: 1500px;
     left: 25%;
     width: 50vw;
     height: 40vw;
-    max-width: ;
+    transition-duration: 0s;
+    transition-timing-function: ease-in;
 }
 
 #myCanvas {
@@ -131,6 +132,18 @@ input[type=text] {
 }
 
 #clear {
+    position: relative;
+    top: 92%;
+    left: 47%;
+    width: auto;
+    height: 30px;
+    z-index: 2;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #362e33;
+    outline: none;
 }
 
 #etchImg {

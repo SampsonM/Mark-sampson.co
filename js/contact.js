@@ -31,13 +31,13 @@ function typeWriter() {
 const canvas = document.querySelector('#myCanvas');
 const ctx = canvas.getContext('2d');
 const etchSketch = document.querySelector('#etch-sketch');
-const clear = document.querySelector('#clear');
 const etchImg = document.querySelector('#etchImg');
+const build = document.querySelector('#build');
 let x = 0;
 let y = 0;
 window.addEventListener("keydown", moveSomething, false);
 window.addEventListener("resize", init, false);
-clear.addEventListener("click", reset, false);
+build.addEventListener("click", openCanvas, false);
 
 init(); //initialise etch sketch area
 
@@ -55,6 +55,7 @@ function reset() {
 
 //set canvas to div automat
 function fitToContainer(canvas){
+    etchSketch.style.transitionDuration = "0s";
     canvas.width  = etchSketch.offsetWidth;
     canvas.height = etchSketch.offsetHeight;
 };
@@ -88,3 +89,7 @@ function moveSomething(e) {
     }   
 };
 
+function openCanvas() {
+    etchSketch.style.transitionDuration = "0.5s";    
+    etchSketch.style.top = '15%';
+}
