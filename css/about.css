@@ -59,10 +59,14 @@ nav .closebtn {
     text-shadow: 0px 0px 4px #252525;
     color: #86a6dae5;
     transition-duration: 0.3s;
+    z-index: 1;
 }
 
 .grid {
     display: grid;
+    position: relative;
+    left: 0;
+    top: -27px;
     height: 100%;
     width: 100%;
     transition: 0.5s;
@@ -92,20 +96,36 @@ nav .closebtn {
     grid-row: 2 / 3;
     margin: 20px auto;
     padding: 20px;
+    text-align: center;
     background-color: #86a6dae5;
     border-radius: .2rem;
     box-shadow: 0 0 10px #000;
+
+}
+
+.words a {
+    color: rgba(216, 38, 38, 0.842);
+    text-decoration: none;
+}
+
+.words a:hover {
+    color: rgb(253, 46, 46);
 }
 
 .git-material {
     grid-column: 2 / 12;
     grid-row: 3 / 4;
     display: grid;
-    grid-template: repeat(4, auto) / repeat(2, 2fr);
+    grid-template: auto repeat(3, auto) / repeat(4, 1fr);
     grid-gap: 10px;
     font-size: 1.9rem;
     font-weight: 700;
     text-align: center;
+}
+
+.git-material a {
+    color: #252525;
+    text-decoration: none;
 }
 
 .git-text {
@@ -215,36 +235,28 @@ nav .closebtn {
     margin: auto;
 }
 
-@media only screen and (min-width: 490px) {
-    #menu {
-        position: fixed;
-    }
+@media only screen and (min-width: 550px) {
     .face {
     max-height: 310px;        
     }
-    .git-material {
-        margin-top: 50px;
-    }
     .git-text {
-        grid-column: 1 / 2;
-    }
-    .git-text p {
-        margin: 110px auto;
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
     }
     .scoreTrack {  
         background: url('../images/scoretrack.png') 46% 20%/280% no-repeat scroll;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
     }
     .rgb {
         background: url('../images/rgb1.png') 50% 100%/cover no-repeat scroll;
-        grid-column: 1 / 2;
+        grid-column: 3 / 5;
         grid-row: 2 / 3;
     }
     .drum {
         background: url('../images/drum.png') -5% 30%/cover no-repeat scroll;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
     }
     .logoArea {
         grid-row: 4 / 5;
@@ -257,6 +269,12 @@ nav .closebtn {
 }
 
 @media only screen and (min-width: 890px) {
+    #menu {
+        position: fixed;
+    }
+    .banner {
+        padding-top: 40px;
+    }
     .face {
         grid-column: 2 / 5;
     }
@@ -276,6 +294,7 @@ nav .closebtn {
         background-repeat: repeat;
     }
     .drum {
+        grid-column
         background: url('../images/drum.png') -5% 0%/cover no-repeat scroll;        
     }
     .drum p {
