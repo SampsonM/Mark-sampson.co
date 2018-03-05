@@ -116,7 +116,7 @@ input[type=text] {
 }
 
 #etch-sketch {
-    display: flex;
+    display: none;
     position: absolute;
     top: 1500px;
     left: 25%;
@@ -124,6 +124,7 @@ input[type=text] {
     height: 40vw;
     transition-duration: 0s;
     transition-timing-function: ease-in;
+    font-family: 'Homemade Apple', cursive;    
 }
 
 #myCanvas {
@@ -138,12 +139,14 @@ input[type=text] {
     width: auto;
     height: 30px;
     z-index: 2;
+    color: rgb(255, 208, 0);
     text-align: center;
     border: none;
     border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px #362e33;
+    background-color: #ff0000;
     outline: none;
+    font-family: 'Homemade Apple', cursive;
+    
 }
 
 #etchImg {
