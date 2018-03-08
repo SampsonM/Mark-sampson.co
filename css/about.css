@@ -49,7 +49,7 @@ nav .closebtn {
 
 #menu {
     display: inline;
-    position: relative;
+    position: fixed;
     left: 20px;
     top: 20px;
     text-shadow: 0px 0px 4px #252525;
@@ -62,7 +62,6 @@ nav .closebtn {
     display: grid;
     position: relative;
     left: 0;
-    top: -27px;
     height: 100%;
     width: 100%;
     transition: 0.5s;
@@ -75,11 +74,10 @@ nav .closebtn {
 
 .banner {
     position: relative;
-    top: -27px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 1 / -1;
-    background-color: #dabc95;
+    background-color: #ddbb8f;
     border-bottom: 2px solid #252525b6;
 }
 
@@ -289,7 +287,6 @@ nav .closebtn {
         background-repeat: repeat;
     }
     .drum {
-        grid-column
         background: url('../images/drum.png') -5% 0%/cover no-repeat scroll;        
     }
     .drum p {
