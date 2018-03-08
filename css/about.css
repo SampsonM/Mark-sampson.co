@@ -1,10 +1,6 @@
 body {
     min-height: 100%;
     width: 100%;
-    background: url("/Users/marksampson/Documents/precourse/PRE-section-3/finalChallenge/images/wood2.jpeg") #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     color: #252525;
     font-family: 'Roboto Mono', sans-serif;   
     font-size: 0.9em;  
@@ -71,13 +67,19 @@ nav .closebtn {
     width: 100%;
     transition: 0.5s;
     grid-template: auto auto auto 1fr / repeat(12, 1fr);
+    background: url("/Users/marksampson/Documents/precourse/PRE-section-3/finalChallenge/images/wood2.jpeg") #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .banner {
+    position: relative;
+    top: -27px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 1 / -1;
-    background-color: #ecdaaf6f;
+    background-color: #dabc95;
     border-bottom: 2px solid #252525b6;
 }
 
@@ -92,9 +94,9 @@ nav .closebtn {
 }
 
 .words {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     grid-row: 2 / 3;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
     background-color: #86a6dae5;
@@ -112,6 +114,11 @@ nav .closebtn {
     color: rgb(253, 46, 46);
 }
 
+.main-body-wallpaper {
+    width: 100%;
+   
+}
+
 .git-material {
     grid-column: 2 / 12;
     grid-row: 3 / 4;
@@ -124,8 +131,15 @@ nav .closebtn {
 }
 
 .git-material a {
+    width: 100%;   
+    min-height: 300px; 
+    max-height: 300px; 
     color: #252525;
     text-decoration: none;
+    border-radius: .2rem; 
+    box-shadow: inset 0 0 0 1000px #99b5e2cf, 0 0 10px #252525; 
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out; 
 }
 
 .git-text {
@@ -140,6 +154,7 @@ nav .closebtn {
     padding: 15px;
     max-width: 350px;
     background-color: #86a6dae5;
+    box-shadow: 0 0 10px #252525;
     border-radius: .2rem;
 }
 
@@ -147,13 +162,6 @@ nav .closebtn {
     background: url('../images/scoretrack.png') 46% 50%/200% repeat fixed;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    width: 100%;
-    min-height: 300px;
-    max-height: 300px;
-    border-radius: .2rem;
-    box-shadow: inset 0 0 0 1000px #99b5e2cf;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
 }
 
 .scoreTrack:hover {
@@ -173,13 +181,6 @@ nav .closebtn {
     background: url('../images/rgb1.png') 44% 100%/200% no-repeat fixed;
     grid-column: 1 / -1; 
     grid-row: 3 / 4;
-    width: 100%;    
-    min-height: 300px;   
-    max-height: 300px;    
-    border-radius: .2rem;
-    box-shadow: inset 0 0 0 1000px #99b5e2cf;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
 }
 
 .rgb:hover {
@@ -198,14 +199,7 @@ nav .closebtn {
 .drum {
     background: url('../images/drum.png') -5% 30%/180% no-repeat fixed;
     grid-column: 1 / -1;
-    grid-row: 4 / 5;
-    width: 100%;    
-    min-height: 300px; 
-    max-height: 300px;  
-    border-radius: .2rem;     
-    box-shadow: inset 0 0 0 1000px #99b5e2cf;  
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;  
+    grid-row: 4 / 5;    
 }
 
 .drum:hover {
@@ -236,6 +230,10 @@ nav .closebtn {
 }
 
 @media only screen and (min-width: 550px) {
+    .words {
+        grid-column: 2 / 12;
+        margin: 20px auto;
+    }
     .face {
     max-height: 310px;        
     }
@@ -271,9 +269,6 @@ nav .closebtn {
 @media only screen and (min-width: 890px) {
     #menu {
         position: fixed;
-    }
-    .banner {
-        padding-top: 40px;
     }
     .face {
         grid-column: 2 / 5;
