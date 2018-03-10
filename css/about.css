@@ -269,6 +269,11 @@ nav .closebtn {
     #menu {
         position: fixed;
     }
+    .grid {
+        background-size: cover;
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+    }
     .face {
         grid-column: 2 / 5;
     }
