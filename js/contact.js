@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "50px";
+    document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("menu").style.visibility = "hidden";
 };
 
@@ -7,6 +7,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("menu").style.visibility = "visible";
 };
+
 
 function emptyName() {
     document.getElementById("name").value = "";
@@ -16,7 +17,9 @@ function emptyEmail() {
     document.getElementById("email").value = "";
 };
 
-let txt = "Let's build something!";
+
+// form
+let txt = "et's build something!";
 let i = 0;
 
 function typeWriter() {
@@ -28,16 +31,18 @@ function typeWriter() {
 };
 
 //etch sketch code
-const canvas = document.querySelector('#myCanvas');
-const ctx = canvas.getContext('2d');
-const etchSketch = document.querySelector('#etch-sketch');
-const etchImg = document.querySelector('#etchImg');
-const build = document.querySelector('#build');
+const canvas = document.querySelector('#myCanvas')
+const ctx = canvas.getContext('2d')
+const etchSketch = document.querySelector('#etch-sketch')
+const etchImg = document.querySelector('#etchImg')
+const build = document.querySelector('#build')
+const close = document.querySelector('#close')
 let x = 0;
 let y = 0;
 window.addEventListener("keydown", moveSomething, false);
 window.addEventListener("resize", init, false);
 build.addEventListener("click", openCanvas, false);
+close.addEventListener("click", closeCanvas, false);
 
 init(); //initialise etch sketch area
 
@@ -94,4 +99,13 @@ function openCanvas() {
     init();
     etchSketch.style.transitionDuration = "0.5s";    
     etchSketch.style.top = '15%';
+}
+
+function closeCanvas() {
+    init();
+    etchSketch.style.transitionDuration = "0.5s"; 
+    etchSketch.style.top = '120%';
+    setTimeout(()=> {
+        etchSketch.style.display = 'none';
+    }, 500)
 }

@@ -119,13 +119,43 @@ input[type=text] {
 #etch-sketch {
     display: none;
     position: absolute;
-    top: 1500px;
-    left: 0;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-left: -47.5%;
+    width: 95%;
     height: 45%;
-    transition-duration: 0s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in;
-    font-family: 'Homemade Apple', cursive;    
+    font-family: 'Homemade Apple', cursive;   
+    animation: tada 1s 1; 
+}
+
+@keyframes tada {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    10%,20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,50%,70%,90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,60%,80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+}
+  
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
 }
 
 #myCanvas {
@@ -139,7 +169,7 @@ input[type=text] {
     grid-template: repeat(9, 1fr) / repeat(12, 1fr);
 }
 
-#clear {
+#close {
     grid-column: 6 / 8;
     grid-row: 9 /10;
     height: 20px;
@@ -153,7 +183,7 @@ input[type=text] {
     font-family: 'Homemade Apple', cursive;
 }
 
-#clear:hover {
+#close:hover {
     text-shadow: 1px 1px 2px #928c8c;
 }
 
@@ -170,6 +200,7 @@ input[type=text] {
         width: 70vw;
         height: 60vw;
         left: 15%;
+        margin-left: 0;
     }
     #clear {
         height: 30px;

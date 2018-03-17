@@ -1,6 +1,12 @@
+$(document).load(function(){
+    $(window).scroll(function(){
+        $("#menu").css("opacity", 1 - $(window).scrollTop() / $('#menu').height());
+    });
+});
+
 function openNav() {
     document.getElementById("menu").style.display = "none";
-    document.getElementById("mySidenav").style.width = "50px";
+    document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
