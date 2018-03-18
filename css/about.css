@@ -78,7 +78,7 @@ nav .closebtn {
     grid-template: auto auto auto 1fr / repeat(12, 1fr);
     background: url("../images/wood2.jpg") #fff;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
 }
 
@@ -120,11 +120,6 @@ nav .closebtn {
 
 .words a:hover {
     color: rgb(253, 46, 46);
-}
-
-.main-body-wallpaper {
-    width: 100%;
-   
 }
 
 .git-material {

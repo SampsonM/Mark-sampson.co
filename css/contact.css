@@ -69,7 +69,7 @@ nav .closebtn {
 
 form {
     position: relative;
-    top: 100px;
+    top: 40px;
     text-align: center;
     font-family: 'Roboto Mono', sans-serif;
     text-align: left;
@@ -230,5 +230,11 @@ input[type=text] {
         width: 50vw;
         height: 40vw;
         left: 24%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    form {
+        top: 25px;
     }
 }
