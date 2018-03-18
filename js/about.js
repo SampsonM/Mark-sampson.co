@@ -1,8 +1,8 @@
-$(document).load(function(){
+
     $(window).scroll(function(){
-        $("#menu").css("opacity", 1 - $(window).scrollTop() / $('#menu').height());
+        $("#menu").css("opacity", 1 - $(window).scrollTop() / 60);
     });
-});
+
 
 function openNav() {
     document.getElementById("menu").style.display = "none";
