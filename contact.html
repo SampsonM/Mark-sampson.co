@@ -23,14 +23,14 @@
     <i onclick="openNav()" class="fa fa-bars" id="menu"></i>
 
 
-        <form>
+        <form onsubmit="return false;">
             <p id="text">L</p>
             <p>Name:</p>
-            <input onclick="emptyName()" id="name" type="text" name="name" required>
+            <input onclick="emptyName()" id="name" type="text" name="name" >
             <p>Email:</p>
-            <input onclick="emptyEmail()" id="email" type="text" name="email" required>
+            <input onclick="emptyEmail()" id="email" type="text" name="email" >
             <p>Message:</p>
-            <textarea id="message" type="text" name="meassage" required></textarea>
+            <textarea id="message" type="text" name="meassage" ></textarea>
             <input type="submit" class="button">
             <input type="reset" class="button">
             <button class="button" id="build">Build!</button>

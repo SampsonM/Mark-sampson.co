@@ -43,8 +43,23 @@ window.addEventListener("keydown", moveSomething, false);
 window.addEventListener("resize", init, false);
 build.addEventListener("click", openCanvas, false);
 close.addEventListener("click", closeCanvas, false);
+etchSketch.addEventListener("touchstart", touched, false);
+etchSketch.addEventListener("touchmove", handleMove, false);
 
 init(); //initialise etch sketch area
+let ongoingTouches = [];
+
+function touched(event) {
+}
+
+function handleMove(event) {
+    console.log(event.touches[0])
+    x = event.touches[0].clientX;
+    y = event.touches[0].clientY;
+    let domx = event.touches[0].target.x;
+    let domy = event.touches[0].target.y;
+    moveCtx((x - domx), (y - domy));
+}
 
 function init() {
     fitToContainer(canvas);    
@@ -77,7 +92,6 @@ function moveSomething(e) {
         case 37: //left
             x -= 4;
             moveCtx(x, y);
-            console.log(x, y);
             break;
         case 38: //up
             y -= 4;

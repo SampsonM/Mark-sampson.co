@@ -3,19 +3,6 @@
     --light-bl: rgba(144, 166, 240, 0.697)
 }
 
-@media only screen and (min-width: 1000px) {
-    .img-text img {
-        max-height: 350px;
-        max-width: 350px;
-    }
-    .img-text {
-        top: 120px;
-    }
-    .main-text {
-        top: 120px;
-    }
-}
-
 body {
     height: 100%;
     width: 100%;
@@ -96,9 +83,9 @@ a .linked {
     color: #ecdaaf;
 }
 
-.main {
+main {
     position: relative;
-    top: 20px;
+    top: 50px;
 }
 
 .img-text {
@@ -141,4 +128,26 @@ h2 {
     height: 70px;
     position: relative;
     top: -10px;
+}
+
+@media only screen and (min-width: 550px) {
+    main {
+        top: 150px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        top: 16px;
+    }
+    .img-text img {
+        max-height: 350px;
+        max-width: 350px;
+    }
+    .img-text {
+        top: 120px;
+    }
+    .main-text {
+        top: 120px;
+    }
 }

@@ -69,7 +69,7 @@ nav .closebtn {
 
 form {
     position: relative;
-    top: 220px;
+    top: 100px;
     text-align: center;
     font-family: 'Roboto Mono', sans-serif;
     text-align: left;
@@ -128,7 +128,7 @@ input[type=text] {
     left: 50%;
     margin-left: -47.5%;
     width: 95%;
-    height: 45%;
+    height: 40%;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
     font-family: 'Homemade Apple', cursive;   
@@ -156,11 +156,6 @@ input[type=text] {
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
     }
-}
-  
-.tada {
-    -webkit-animation-name: tada;
-    animation-name: tada;
 }
 
 #myCanvas {
@@ -201,6 +196,9 @@ input[type=text] {
 }
 
 @media only screen and (min-width: 550px) {
+    form {
+        top: 150px;
+    }
     #etch-sketch {
         width: 70vw;
         height: 60vw;
@@ -213,6 +211,10 @@ input[type=text] {
 }
 
 @media only screen and (min-width: 800px) {
+    form {
+        top: 200px;
+    }
+
     #etch-sketch {
         width: 70vw;
         height: 60vw;
@@ -220,6 +222,10 @@ input[type=text] {
 }
 
 @media only screen and (min-width: 1200px) {
+    form {
+        top: 250px;
+    }
+
     #etch-sketch {
         width: 50vw;
         height: 40vw;
