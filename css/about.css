@@ -275,7 +275,7 @@ nav .closebtn {
     }
     .grid {
         background-size: cover;
-        background-attachment:scroll;
+        background-attachment:fixed;
         background-repeat: no-repeat;
     }
     .face {

@@ -1,3 +1,7 @@
+$(window).scroll(function(){
+    $("#menu").css("opacity", 1 - $(window).scrollTop() / 60);
+});
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("menu").style.transitionDelay = "0s";

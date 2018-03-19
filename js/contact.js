@@ -46,7 +46,6 @@ close.addEventListener("click", closeCanvas, false);
 etchSketch.addEventListener("touchstart", touched, false);
 etchSketch.addEventListener("touchmove", handleMove, false);
 
-init(); //initialise etch sketch area
 let ongoingTouches = [];
 
 function touched(event) {
@@ -109,8 +108,8 @@ function moveSomething(e) {
 };
 
 function openCanvas() {
-    etchSketch.style.display = 'flex';
     init();
+    etchSketch.style.display = 'flex';
     etchSketch.style.transitionDuration = "0.5s";    
     etchSketch.style.top = '15%';
 }
