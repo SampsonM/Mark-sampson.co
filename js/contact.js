@@ -108,8 +108,8 @@ function moveSomething(e) {
 };
 
 function openCanvas() {
-    init();
     etchSketch.style.display = 'flex';
+    init();
     etchSketch.style.transitionDuration = "0.5s";    
     etchSketch.style.top = '15%';
 }

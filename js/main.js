@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-    $("#menu").css("opacity", 1 - $(window).scrollTop() / 60);
+    $("#menu").css("opacity", 1 - $(window).scrollTop() / 900);
 });
 
 function openNav() {

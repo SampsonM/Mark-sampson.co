@@ -4,7 +4,8 @@
 }
 
 body {
-    top: 0;
+    position: absolute;
+    top: -14px;
     left: 0;
     height: 100%;
     width: 100%;
@@ -14,13 +15,14 @@ body {
 }
 
 main {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    min-height: 600px;
     background: url("../images/wood2.jpg")#fff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,8 +146,7 @@ h2 {
 }
 
 .about  {
-    position: absolute;
-    top: 100%;
+    position: relative;
 }
 
 .grid {
@@ -189,12 +190,12 @@ h2 {
 
 }
 
-.words a {
+.about-words a {
     color: rgba(216, 38, 38, 0.842);
     text-decoration: none;
 }
 
-.words a:hover {
+.about-words a:hover {
     color: rgb(253, 46, 46);
 }
 
@@ -309,6 +310,9 @@ h2 {
 }
 
 @media only screen and (min-width: 550px) {
+    main {
+        min-height: 800px;
+    }
     figure {
         top: 150px;
     }
@@ -357,9 +361,6 @@ h2 {
         background-attachment:fixed;
         background-repeat: no-repeat;
     }
-    .face {
-        grid-column: 2 / 5;
-    }
     .words {
         grid-column: 7 / 12;
         grid-row: 1 / 2;
@@ -405,11 +406,9 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
     figure {
-        top: 100px;
+        top: 30px;
     }
     .face {
-        grid-column: 3 / 6;
-        max-height: 360px;
         margin: 50px auto;
     }
     .words {
