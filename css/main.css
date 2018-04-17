@@ -269,7 +269,7 @@ h2 {
 }
 
 .notes {
-    background-image: url('../images/todolist.png');
+    background: url('../images/todolist.png') 46% 100%/200% repeat fixed;
     grid-column: 1 / -1;
     grid-row: 4 / 5;
 }
@@ -335,6 +335,7 @@ h2 {
         grid-row: 2 / 3;
     }
     .notes {
+        background: url('../images/todolist.png') 40% 5%/100% repeat scroll;
         grid-column: 3 / 5;
         grid-row: 4 /5;
     }
