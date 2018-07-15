@@ -13,3 +13,11 @@ function closeNav() {
     document.getElementById("menu").style.transitionDelay = "0.3s";
     document.getElementById("menu").style.visibility = "visible";
 }
+
+function moveToAbout() {
+    const about = document.getElementById('about');
+    about.scrollIntoView({
+        block: "start",
+        behavior: 'smooth'
+    });
+}

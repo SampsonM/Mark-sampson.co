@@ -26,7 +26,8 @@ main {
     background: url("../images/wood2.jpg")#fff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: local;
+    position: fixed;
 }
 
 #backg-fade {
@@ -72,6 +73,7 @@ a .linked {
     position: relative;
     left: 2px;
 }
+
 
 .closebtn {
     position: absolute;
@@ -151,6 +153,11 @@ h2 {
     min-height: auto;
 }
 
+#about {
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
 .grid {
     display: grid;
     position: relative;
@@ -191,13 +198,20 @@ h2 {
     box-shadow: 0 0 10px #000;
 }
 
-.about-words a {
+.about-words #NC {
     color: rgba(216, 38, 38, 0.842);
     text-decoration: none;
 }
+.about-words #MSM {
+    color: #4f05d8;
+    text-decoration: none;
+}
 
-.about-words a:hover {
-    color: rgb(253, 46, 46);
+.about-words #NC:hover {
+    color: rgb(206, 96, 96);
+}
+.about-words #MSM:hover {
+    color: #8e5de9;
 }
 
 .git-material {

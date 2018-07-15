@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>SampsonM | Full Stack Developer</title>
+    <title>SampsonM | Front-end Developer</title>
 </head>
 <body>
     <main>
         <div id="backg-fade"></div>
         <nav id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about"><i class="fa fa-wpexplorer" onclick="closeNav()" style="font-size: 1.9em"></i></a>
+            <a ><i class="fa fa-wpexplorer" onclick="closeNav(); moveToAbout()" style="font-size: 1.9em"></i></a>
             <a href="./contact.html"><i class="fa fa-envelope-o" style="font-size: 1.87em"></i></a>
             <a href="https://www.linkedin.com/in/mark-sampson-33995bb9/" target="_blank"><i class="fa fa-linkedin linked" style="font-size: 1.9em"></i></a>
             <a href="https://github.com/SampsonM" target="_blank"><i class="fa fa-github" style="font-size: 2.3em"></i></a>
@@ -26,24 +26,22 @@
         <figure>
             <div class="img-text">    
                 <img src="images/me.jpg" alt="SampsonM">
-                <h2>Mark Sampson - Software Developer</h2>
+                <h2>Mark Sampson - Front-end Developer</h2>
             </div>
     
             <div class="main-text">
-                <img src="images/logo.png">
+                <img src="images/logo.svg">
             </div>
         </figure>
     </main>
 
-    <div class="about">
-        <a name="about"></a>
+    <div class="about" id="about">
             
             <div class="grid">
                 <img class="face" src="images/me2.jpg" alt="SampsonM">
                 <div class="about-words">
                     <p>A curious coder.</br></br>
-                    A recent graduate of <a href="https://northcoders.com/" target="_blank">^Nortchcoders</a>,
-                    building the core foundations for what is required of a full stack developer, alongside working towards a degree in Computing & IT with the Open University</p>
+                    After teaching myself front end developement for a few months in 2017 I decided to attempt the <a id="NC" href="https://northcoders.com/" target="_blank">^Nortchcoders</a> coding bootcamp, after successfully completeing the course I am now employed by <a id="MSM" href="http://www.moneysupermarketjobs.com/about-us/who-we-are" target="_blank">Moneysupermarket</a> as a front-end developer.</p>
                 </div>
                 
                 <div class="git-material">
